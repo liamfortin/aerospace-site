@@ -1,0 +1,139 @@
+ body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c4a7a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .section {
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            color: #2c4a7a;
+        }
+
+        .team {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .member {
+            background-color: #e8e8e8;
+            padding: 15px;
+            width: 220px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c4a7a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+/* below here is the website title you NEED to include at the top of every page: */
+
+        .headertitle {
+            
+            text-align: center;
+            font-size: 48px;
+
+        }
+
+/* This is the navbar style below here: */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2c4a7a;
+  overflow: visible;   
+}
+
+ul::after {
+  content: "";
+  display: table;
+  clear: both;         
+}
+
+ul li {
+  float: left;         
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+ul li a:hover {
+  background-color: #001161;
+  color: lightgrey;
+  border: 2px solid white;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;           
+  left: 0;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,10);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #2c4a7a;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #ffffff;
+  color: #001161;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img {
+
+    width: 500px;
+    height: auto;
+    box-align: left;
+    border: 10px solid #001161;
+
+}
+
+.standout {
+  color: #0062ff;
+}

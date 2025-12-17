@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Feedback</title>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c4a7a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .headertitle {
+            text-align: center;
+            font-size: 48px;
+        }
+
+        .section, .form-section {
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            color: #2c4a7a;
+        }
+
+        .team {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .member {
+            background-color: #e8e8e8;
+            padding: 15px;
+            width: 220px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"], select, textarea, input[type="range"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .options input {
+            margin-right: 5px;
+        }
+
+        .submit-buttons {
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            background-color: #2c4a7a;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c4a7a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="headertitle">Our Science Project</div>
+        <p>Changing science one idea at a time</p>
+    </header>
+
+    <div class="section">
+        <h2>Who We Are</h2>
+        <p>We are three Grade 10 students: <b>Arjav</b>, <b>Annaji</b>, and <b>Liam</b>. We love science and wanted to create something cool.</p>
+        <p>Our project is an <b>artificial gravity centrifuge</b> to understand how gravity could work in space.</p>
+    </div>
+
+    <div class="section">
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="member">
+                <h3>Arjav</h3>
+                <p>Research</p>
+            </div>
+            <div class="member">
+                <h3>Annaji</h3>
+                <p>Engineering </p>
+            </div>
+            <div class="member">
+                <h3>Liam</h3>
+                <p>Programming</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Our Project</h2>
+        <p>Our centrifuge spins to simulate gravity. We hope it helps astronauts stay healthy in space and inspires other students.</p>
+    </div>
+
+    <div class="form-section">
+        <h2>Feedback Form</h2>
+        <p>We would love to hear your thoughts about our centrifuge project!</p>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label>How clear was our project explanation?</label>
+            <div class="options">
+                <input type="radio" name="clarity" value="very_clear"> Very clear
+                <input type="radio" name="clarity" value="clear"> Clear
+                <input type="radio" name="clarity" value="unclear"> Unclear
+            </div>
+
+            <label>Which parts of the project were most interesting? (Select all that apply)</label>
+            <div class="options">
+                <input type="checkbox" value="engineering"> Engineering
+                <input type="checkbox" value="science"> Science
+                <input type="checkbox" value="programming"> Programming/Electronics
+                <input type="checkbox" value="space"> Space/Gravity concepts
+            </div>
+
+            <label>How would you rate our project overall?</label>
+            <input type="range" min="1" max="10">
+
+            <label>Any suggestions or ideas for improvement?</label>
+            <textarea rows="4" placeholder="Type your feedback here"></textarea>
+
+            <div class="submit-buttons">
+                <button type="submit">Submit Feedback</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Arjav, Annaji & Liam</p>
+    </footer>
+
+</body>
+</html>
