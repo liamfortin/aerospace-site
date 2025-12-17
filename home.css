@@ -1,0 +1,100 @@
+h1, h2, h3 {
+  font-family:Montserrat;
+}
+
+p {
+  font-family:Montserrat;
+  margin-left:2%;
+}
+
+.textInFancyBg {
+  text-align:center;
+  color:white;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.spaceBackground {
+  background:linear-gradient(black 55%, white 130%)
+}
+
+.centre {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#bannerSeparator {
+  margin-top:-23px;
+}
+
+#shrinkContent {
+  width:80%;
+  margin-left:10%;
+}
+
+ul {
+  list-style-type: none;
+  margin: -5%, 0px, 0px, -5%;
+  padding: 0;
+  background-color: #2c4a7a;
+  overflow: visible;   
+}
+
+ul::after {
+  content: "";
+  display: table;
+  clear: both;         
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+ul li a:hover {
+  background-color: #001161;
+  color: lightgrey;
+  border: 2px solid white;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;           
+  left: 0;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,10);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #2c4a7a;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #ffffff;
+  color: #001161;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
