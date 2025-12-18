@@ -93,6 +93,73 @@
             margin-top: 30px;
         }
 
+
+ul {
+  list-style-type: none;
+  margin: 0% 0px 0px 0%;
+  padding: 0px;
+  background-color: #2c4a7a;
+  overflow: visible;   
+}
+
+ul::after {
+  content: "";
+  display: table;
+  clear: both;         
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+ul li a:hover {
+  background-color: #001161;
+  color: lightgrey;
+  border: 2px solid white;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;           
+  left: 0;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,10);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #2c4a7a;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #ffffff;
+  color: #001161;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
     </style>
 </head>
 <body>
@@ -101,6 +168,23 @@
         <div class="headertitle">Our Science Project</div>
         <p>Changing science one idea at a time</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+    
+            <li>
+                <a href="prototype.html">Our Prototype</a>
+                <div class="dropdown-content">
+            <a href="#firstPrototype">Our 1st Idea</a>
+            <a href="#secondPrototype">Our 2nd Idea</a>
+            <a href="#thirdPrototype">Our 3rd Idea</a>
+            </div>
+            </li>
+    
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
 
     <div class="section">
         <h2>Who We Are</h2>
